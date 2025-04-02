@@ -1,0 +1,22 @@
+# Removed 'version' since it's obsolete
+services:
+  mongodb:
+    image: mongo:7-jammy
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb:/data/db  # Fixed: removed trailing slash
+    networks:
+      - backend
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  mongodb:  # Correctly defines the named volume
