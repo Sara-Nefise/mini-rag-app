@@ -13,10 +13,22 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
-
+  pgvector:
+    image: pgvector/pgvector:0.8.0-pg17
+    container_name: pgvector
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgvector:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    networks:
+      - backend
+    restart: always
 networks:
   backend:
     driver: bridge
 
 volumes:
   mongodb:  # Correctly defines the named volume
+  pgvector:
