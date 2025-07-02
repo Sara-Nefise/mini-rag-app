@@ -39,6 +39,14 @@ class ProjectModel(BaseDataModel):
                     return project
                 else:
                     return project
+    
+    async def create_empty_project(self):
+        project = Project()
+        async with self.db_client() as session:
+            async with session.begin():
+                session.add(project)
+            await session.refresh(project)
+        return project.project_id
 
     async def get_all_projects(self, page: int=1, page_size: int=10):
 

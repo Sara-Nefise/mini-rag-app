@@ -7,6 +7,8 @@ from controllers import NLPController
 from models import ResponseSignal
 import logging
 from tqdm.auto import tqdm
+from models.db_schemes import Message
+from models.MessageModel import MessageModel
 
 logger = logging.getLogger('uvicorn.error')
 
@@ -162,7 +164,7 @@ async def search_index(request: Request, project_id: int, search_request: Search
     )
 
 @nlp_router.post("/index/answer/{project_id}")
-async def answer_rag(request: Request, project_id: int, search_request: SearchRequest):
+async def answer_rag(request: Request, project_id: int ,search_request: SearchRequest):
     
     project_model = await ProjectModel.create_instance(
         db_client=request.app.db_client
@@ -184,6 +186,8 @@ async def answer_rag(request: Request, project_id: int, search_request: SearchRe
         query=search_request.text,
         limit=search_request.limit,
     )
+    #
+ 
 
     if not answer:
         return JSONResponse(
@@ -192,7 +196,13 @@ async def answer_rag(request: Request, project_id: int, search_request: SearchRe
                     "signal": ResponseSignal.RAG_ANSWER_ERROR.value
                 }
         )
-    
+    message_model = await MessageModel.create_instance(db_client=request.app.db_client)
+
+    created_message = await message_model.create_message( Message(
+        chat_id=search_request.chat_id,
+        is_user=False,
+        content=answer,
+    ))
     return JSONResponse(
         content={
             "signal": ResponseSignal.RAG_ANSWER_SUCCESS.value,
