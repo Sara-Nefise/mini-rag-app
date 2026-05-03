@@ -10,7 +10,13 @@ class VectorDBProviderFactory:
         self.base_controller = BaseController()
 
     def create(self, provider: str):
-        if provider == VectorDBEnums.QDRANT.value:
+        if provider is None:
+            return None
+        p = str(provider).strip().upper()
+        if not p:
+            return None
+
+        if p == VectorDBEnums.QDRANT.value:
             qdrant_db_client = self.base_controller.get_database_path(db_name=self.config.VECTOR_DB_PATH)
 
             return QdrantDBProvider(
@@ -19,7 +25,7 @@ class VectorDBProviderFactory:
                 default_vector_size=self.config.EMBEDDING_MODEL_SIZE, 
                 index_threshold=self.config.VECTOR_DB_PGVEC_INDEX_THRESHOLD,
             )
-        if provider == VectorDBEnums.PGVECTOR.value:
+        if p == VectorDBEnums.PGVECTOR.value:
             return PGVectorProvider (
             db_client=self.db_client,
             distance_method=self.config.VECTOR_DB_DISTANCE_METHOD,

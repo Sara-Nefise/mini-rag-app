@@ -1,0 +1,2 @@
+{"question": "İki haberde ortak geçen kurum hangisidir?", "answer": "Örnek Kurumu", "contexts": ["Örnek Kurumu İstanbul'da yeni proje açıkladı. Basın toplantısı yapıldı.", "Ticaret Bakanlığı ile Örnek Kurumu anlaşma imzaladı. Anlaşma şehir merkezinde duyuruldu."], "question_type": "Inference"}
+{"question": "Hangi olay daha önce gerçekleşti?", "answer": "İlk olay A.", "contexts": ["2023 yılında A olayı gerçekleşti.", "2024 yılında B olayı gerçekleşti ve A'dan sonra geldi."], "question_type": "Temporal"}

@@ -148,3 +148,15 @@ class QdrantDBProvider(VectorDBInterface):
             for result in results
         ]
 
+    async def drop_all_project_collections(self, name_prefix: str = "collection_") -> int:
+        if not self.client:
+            return 0
+        cols = self.client.get_collections().collections
+        count = 0
+        for c in cols:
+            if c.name.startswith(name_prefix):
+                if self.client.collection_exists(collection_name=c.name):
+                    self.client.delete_collection(collection_name=c.name)
+                    count += 1
+        return count
+

@@ -1,30 +1,41 @@
 
 from .LLMEnums import LLMEnums
-from .providers import OpenAIProvider, CoHereProvider
+from .providers import CoHereProvider, OpenAIProvider, SentenceTransformersProvider
 
 class LLMProviderFactory:
     def __init__(self, config: dict, ):
         self.config = config
 
     def create(self, provider: str, embedding: bool = False):
-       
-        if provider == LLMEnums.OPENAI.value:
-       
-                  return OpenAIProvider(
-                    api_key=self.config.OPENAI_API_KEY,
-                    api_url=self.config.OPENAI_API_URL,
-                    default_input_max_characters=self.config.INPUT_DAFAULT_MAX_CHARACTERS,
-                    default_generation_max_output_tokens=self.config.GENERATION_DAFAULT_MAX_TOKENS,
-                    default_generation_temperature=self.config.GENERATION_DAFAULT_TEMPERATURE
-                )
+        if provider is None:
+            return None
+        p = str(provider).strip().upper()
+        if not p:
+            return None
 
-
-        if provider == LLMEnums.COHERE.value:
-            return CoHereProvider(
-                api_key = self.config.COHERE_API_KEY,
+        if p == LLMEnums.OPENAI.value:
+            return OpenAIProvider(
+                api_key=self.config.OPENAI_API_KEY,
+                api_url=self.config.OPENAI_API_URL,
                 default_input_max_characters=self.config.INPUT_DAFAULT_MAX_CHARACTERS,
                 default_generation_max_output_tokens=self.config.GENERATION_DAFAULT_MAX_TOKENS,
-                default_generation_temperature=self.config.GENERATION_DAFAULT_TEMPERATURE
+                default_generation_temperature=self.config.GENERATION_DAFAULT_TEMPERATURE,
+            )
+
+        if p == LLMEnums.COHERE.value:
+            return CoHereProvider(
+                api_key=self.config.COHERE_API_KEY,
+                default_input_max_characters=self.config.INPUT_DAFAULT_MAX_CHARACTERS,
+                default_generation_max_output_tokens=self.config.GENERATION_DAFAULT_MAX_TOKENS,
+                default_generation_temperature=self.config.GENERATION_DAFAULT_TEMPERATURE,
+            )
+
+        if p == LLMEnums.SENTENCE_TRANSFORMERS.value:
+            return SentenceTransformersProvider(
+                default_input_max_characters=self.config.INPUT_DAFAULT_MAX_CHARACTERS,
+                default_generation_max_output_tokens=self.config.GENERATION_DAFAULT_MAX_TOKENS,
+                default_generation_temperature=self.config.GENERATION_DAFAULT_TEMPERATURE,
+                device=getattr(self.config, "EMBEDDING_DEVICE", None),
             )
 
         return None

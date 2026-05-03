@@ -1,3 +1,6 @@
+import os
+import logging
+
 import firebase_admin
 from firebase_admin import credentials, auth
 from fastapi import FastAPI
@@ -22,8 +25,15 @@ async def startup_span():
     settings = get_settings()
 
     if not firebase_admin._apps:
-        cred = credentials.Certificate(settings.FIREBASE_CREDENTIALS_PATH)
-        firebase_admin.initialize_app(cred)
+        cred_path = settings.FIREBASE_CREDENTIALS_PATH
+        if cred_path and os.path.isfile(cred_path):
+            cred = credentials.Certificate(cred_path)
+            firebase_admin.initialize_app(cred)
+        else:
+            logging.getLogger("uvicorn.error").warning(
+                "FIREBASE_CREDENTIALS_PATH missing or not a file; Firebase auth is disabled. "
+                "Add a service account JSON to enable it."
+            )
     
 
     postgres_conn = f"postgresql+asyncpg://{settings.POSTGRES_USERNAME}:{settings.POSTGRES_PASSWORD}@{settings.POSTGRES_HOST}:{settings.POSTGRES_PORT}/{settings.POSTGRES_MAIN_DATABASE}"
@@ -49,6 +59,11 @@ async def startup_span():
     app.vectordb_client = vectordb_provider_factory.create(
         provider=settings.VECTOR_DB_BACKEND
     )
+    if app.vectordb_client is None:
+        raise RuntimeError(
+            "VECTOR_DB_BACKEND must be QDRANT or PGVECTOR (set it in src/.env). "
+            f"Got {settings.VECTOR_DB_BACKEND!r}."
+        )
     await app.vectordb_client.connect()
 
     app.template_parser = TemplateParser(
@@ -58,8 +73,12 @@ async def startup_span():
 
 
 async def shutdown_span():
-    await app.db_engine.dispose()
-    await app.vectordb_client.disconnect()
+    engine = getattr(app, "db_engine", None)
+    if engine is not None:
+        await engine.dispose()
+    vc = getattr(app, "vectordb_client", None)
+    if vc is not None:
+        await vc.disconnect()
 
 app.on_event("startup")(startup_span)
 app.on_event("shutdown")(shutdown_span)

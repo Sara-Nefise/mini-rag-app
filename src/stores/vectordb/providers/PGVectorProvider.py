@@ -102,6 +102,20 @@ class PGVectorProvider(VectorDBInterface):
         
         return True
 
+    async def drop_all_project_collections(self, name_prefix: str = "collection_") -> int:
+        pattern = name_prefix.replace("%", "") + "%"
+        async with self.db_client() as session:
+            async with session.begin():
+                list_tbl = sql_text(
+                    "SELECT tablename FROM pg_tables "
+                    "WHERE schemaname = 'public' AND tablename LIKE :pattern"
+                )
+                results = await session.execute(list_tbl, {"pattern": pattern})
+                names = [row[0] for row in results.fetchall()]
+        for name in names:
+            await self.delete_collection(collection_name=name)
+        return len(names)
+
     async def create_collection(self, collection_name: str,
                                       embedding_size: int,
                                       do_reset: bool = False):

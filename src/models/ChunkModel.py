@@ -49,7 +49,14 @@ class ChunkModel(BaseDataModel):
             result = await session.execute(stmt)
             await session.commit()
         return result.rowcount
-    
+
+    async def delete_all_chunks(self) -> int:
+        async with self.db_client() as session:
+            stmt = delete(DataChunk)
+            result = await session.execute(stmt)
+            await session.commit()
+        return result.rowcount or 0
+
     async def get_poject_chunks(self, project_id: ObjectId, page_no: int=1, page_size: int=50):
         async with self.db_client() as session:
             stmt = select(DataChunk).where(DataChunk.chunk_project_id == project_id).offset((page_no - 1) * page_size).limit(page_size)

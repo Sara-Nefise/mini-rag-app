@@ -49,4 +49,8 @@ class VectorDBInterface(ABC):
     @abstractmethod
     def search_by_vector(self, collection_name: str, vector: list, limit: int) -> List[RetrievedDocument]:
         pass
-    
+
+    @abstractmethod
+    async def drop_all_project_collections(self, name_prefix: str = "collection_") -> int:
+        """Remove every vector store/table whose name starts with name_prefix. Returns how many were dropped."""
+        pass

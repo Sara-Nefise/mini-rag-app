@@ -196,13 +196,17 @@ async def answer_rag(request: Request, project_id: int ,search_request: SearchRe
                     "signal": ResponseSignal.RAG_ANSWER_ERROR.value
                 }
         )
-    message_model = await MessageModel.create_instance(db_client=request.app.db_client)
 
-    created_message = await message_model.create_message( Message(
-        chat_id=search_request.chat_id,
-        is_user=False,
-        content=answer,
-    ))
+    if search_request.chat_id is not None:
+        message_model = await MessageModel.create_instance(db_client=request.app.db_client)
+        await message_model.create_message(
+            Message(
+                chat_id=search_request.chat_id,
+                is_user=False,
+                content=answer,
+            )
+        )
+
     return JSONResponse(
         content={
             "signal": ResponseSignal.RAG_ANSWER_SUCCESS.value,

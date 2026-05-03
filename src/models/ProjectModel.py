@@ -3,6 +3,7 @@ from .db_schemes import Project
 from .enums.DataBaseEnum import DataBaseEnum
 from sqlalchemy.future import select
 from sqlalchemy import func
+from typing import List
 
 class ProjectModel(BaseDataModel):
 
@@ -67,3 +68,8 @@ class ProjectModel(BaseDataModel):
                 projects = await session.execute(query).scalars().all()
 
                 return projects, total_pages
+
+    async def list_all_project_ids(self) -> List[int]:
+        async with self.db_client() as session:
+            result = await session.execute(select(Project.project_id))
+            return list(result.scalars().all())
