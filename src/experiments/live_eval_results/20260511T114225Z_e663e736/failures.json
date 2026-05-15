@@ -1,0 +1,177 @@
+[
+  {
+    "sample_id": 0,
+    "question": "Kuzey Kore'nin nükleer silah geliştirme çabalarına karşı uluslararası tepki gösterilmesi gerektiği konusunda anlaşan iki ülke, aynı zamanda İran'ın petrol sektörüne yönelik yaptırımların genişletilmesi konusunda da hangi ülkenin desteğini aramaktadır?",
+    "gold_ids": [
+      "172301",
+      "58187"
+    ],
+    "retrieved_mlsum_ids": [
+      "58187",
+      "57888",
+      "62310",
+      "6203",
+      "67875",
+      "16261",
+      "167902",
+      "52900",
+      "57182",
+      "171263",
+      "60060",
+      "56739",
+      "62295",
+      "60068",
+      "51833",
+      "130987",
+      "62097",
+      "56463",
+      "11764",
+      "60013"
+    ],
+    "retrieved_preview": [
+      "İran, Basra Körfezi'ndeki petrol üreticisi ülkeleri, petrol üretimini artırmamaları konusunda uyardı; böyle bir adımın sonuçlarından kendilerinin sorumlu olacağını bildirdi. ABD ve Avrupa Birliği ülkeleri bir süredir İran'ın petrol sektörünü hedef alan yeni yaptırımlar uygulamak için adımlar atıyor,",
+      "Moskova’dan, İran'a yönelik uluslararası yaptırımların artırılması konusunda eleştiri geldi. Dışişleri Bakanı Sergei Lavrov, uygulanmakta olan yaptırımların ülke ekonomisine darbe vurarak İran halkına zarar verdiğini belirtti. Lavrov Moskova'da yapılan basın toplantısında, yaptırımların daha da artı",
+      "ABD Dışişleri Bakanı Hillary Clinton, yaptığı yazılı açıklamada, ilk aşamada 11 ülkenin İran'dan petrol alımlarında önemli ölçüde kesintiye gittiğini bildirerek, bu ülkeleri Belçika, Çek Cumhuriyeti, Fransa, Almanya, Yunanistan, İtalya, Japonya, Hollanda, Polonya, İspanya ve İngiltere olarak sıralad"
+    ]
+  },
+  {
+    "sample_id": 1,
+    "question": "Saddam Hüseyin'in 11 Eylül saldırılarını Amerika ve Irak ilişkileri açısından yeni bir sayfa olarak gördüğü dönemde, Türkiye'nin krizin arkasında özellikle hangi ülkenin parmağı olduğuna dair iddialar, Ankara-Washington ilişkilerini germe potansiyeline sahipti?",
+    "gold_ids": [
+      "192872",
+      "112765"
+    ],
+    "retrieved_mlsum_ids": [
+      "159093",
+      "51189",
+      "192872",
+      "51204",
+      "134207",
+      "172962",
+      "125955",
+      "49933",
+      "135580",
+      "37441",
+      "126133",
+      "132804",
+      "54129",
+      "62462",
+      "21032",
+      "136063",
+      "35246",
+      "32005",
+      "11848",
+      "3820"
+    ],
+    "retrieved_preview": [
+      "New York Times gazetesinde bugün ABD'nin eski Ankara Büyükelçisi Eric Edelman imzalı bir yazı yayımlandı. Edelman yazısında, Cumhurbaşkanı Erdoğan'ın iç siyasi dengeler ve tek başına iktidar olmak amacıyla İncirlik'i açtığını söylerken \"Obama yönetimi, Türkiye'nin üst düzey toplantılara katılımını s",
+      "Hakkari'de 24 askerin şehit öldüğü, 18'inin de yaralandığı saldırılar dış basında geniş yankı buldu.Saldırıyla ilgili olarak İngiltere gazetelerinde yer alan yorumlarda PKK'yı İran ve Suriye'nin kışkırtmış olabileceği öne sürüldü. Daily Telegraph saldırıların ülkede büyük öfke yarattığını belirtirke",
+      "Nixon Saddam'ın ayrıca \"Irak hükümetinin El Kaide bağlantıları var\" iddiasını reddettiğini ve 11 Eylül saldırılarına hiçbir şekilde destek vermediğini kitabında belirtti. Nixon'a göre Saddam 11 Eylül saldırılarını Amerika ve Irak ilişkileri açısından yeni bir sayfa olarak gördü. ABD yönetiminin 2001"
+    ]
+  },
+  {
+    "sample_id": 2,
+    "question": "29 Ekim Cumhuriyet Bayramı kutlamaları için yapılan tören provaları sırasında, Vatan Caddesi ve Bağdat Caddesi'nde trafiğe kapatılan yollar için sürücülere önerilen alternatif güzergahlar arasında hangi yol, Kadıköy'deki trafiğe kapalı yolların alternatif güzergahları arasında da yer almaktadır?",
+    "gold_ids": [
+      "50800",
+      "106358"
+    ],
+    "retrieved_mlsum_ids": [
+      "134392",
+      "188431",
+      "164173",
+      "50800",
+      "134776",
+      "188506",
+      "134844",
+      "164088",
+      "76285",
+      "164700",
+      "106244",
+      "130834",
+      "105761",
+      "164598",
+      "187682",
+      "78084",
+      "106358",
+      "23125",
+      "23590",
+      "105670"
+    ],
+    "retrieved_preview": [
+      "İstanbul'da bugün 29 Ekim Cumhuriyet Bayramı törenleri nedeniyle başta İstanbul Vatan Caddesi olmak üzere bazı yollar trafiğe kapalı olacak. İstanbul Valiliği'nin açıklamasıyla trafiğe kapatılan yollara karşı alternatif yollar hangileri? TRAFİĞE KAPATILAN YOLLAR İstanbul Valiliği yaptığı yazılı açık",
+      "Vatan Caddesi’nde yapılacak olan 29 Ekim Cumhuriyet Bayramı provaları nedeniyle Oğuzhan Caddesi, Topkapı, Edirnekapı Kavşağı ve Vatan Caddesi kesişim noktaları trafiğe kapatıldı. Saat 07.30'dan tören bitimine kadar araç trafiğine kapatılan yollar ile alternatif güzergahlar şöyle: \"Kapatılan yollar; ",
+      "İSTANBUL 'da 29 Ekim Cumhuriyet Bayramı kutlamaları nedeniyle trafiğe kapatılacak yollar ve alternatif güzergahlar belirlendi. İstanbul Valiliği, Vatan Caddesi’nde yapılacak kutlamalarda 29 Ekim 2015 günü 05.00-16.00 saatleri arasında trafiğe kapatılacak yollar ve alternatif güzergahları açıkladı. İ"
+    ]
+  },
+  {
+    "sample_id": 3,
+    "question": "Beşiktaş taraftar grubu Çarşı'nın Kızılay ile birlikte başlattığı kampanya ve Koç Topluluğu Şirketleri'nin jeneratör, gıda ve ısıtıcı gönderdiği yardım faaliyetleri hangi deprem felaketinin mağdurlarına yöneliktir?",
+    "gold_ids": [
+      "53571",
+      "50563"
+    ],
+    "retrieved_mlsum_ids": [
+      "53571",
+      "50300",
+      "50563",
+      "50228",
+      "664",
+      "50435",
+      "50055",
+      "103907",
+      "50252",
+      "50380",
+      "50631",
+      "50652",
+      "21389",
+      "50452",
+      "104265",
+      "50495",
+      "53507",
+      "22706",
+      "50658",
+      "53462"
+    ],
+    "retrieved_preview": [
+      "Beşiktaş'ın en etkili taraftar grubu Çarşı, Van'da yaşanan deprem felaketinin yaralarını sarabilmek amacıyla kampanya başlatıyor. Siyah-beyazlı taraftarlar, internet siteleri vasıtasıyla duyurdukları kampanyanın, Galatasaray ile 20 Kasım Pazar günü oynanacak derbi maçla birlikte başlayacağını açıkla",
+      "Grubun başlattığı kampanya ile 3 Kasım günü \"sahaya atılacak\" olan atkı ve bereler toplanarak Van'a gönderilecek. Çarşı'nın sayfasından yapılan açıklama şöyle: ''Deprem felaketi sonrası soğuktan üşüyen yüreklere, merhametle ısıttığımız atkılarımızı yollayacağız. Önce kartallarımızı destekliyoruz maç",
+      "Koç Topluluğu Şirketleri, Koç Holding çatısı altında bir koordinasyon kurulu oluşturarak deprem bölgesine yardım göndermeye başladı. Koç Holding AŞ'den yapılan yazılı açıklamada, Van'da meydana gelen depremde onlarca vatandaşın yaşamını yitirdiği, yüzlercesinin yaralandığı ve pek çok evin hasar görm"
+    ]
+  },
+  {
+    "sample_id": 4,
+    "question": "Uludere'de yaşamını yitirenlerin anma etkinliğinde, Kürdistan meselesi üzerinden Erdoğan'a yönelik eleştirilerde bulunan ve bu olayın Kürdistan'ın önünü kesmek amacıyla yapıldığını belirten BDP Genel Başkanı kimdir?",
+    "gold_ids": [
+      "54000",
+      "80841"
+    ],
+    "retrieved_mlsum_ids": [
+      "80841",
+      "80788",
+      "54123",
+      "54029",
+      "114219",
+      "54048",
+      "80787",
+      "65538",
+      "54000",
+      "57076",
+      "65405",
+      "81028",
+      "53998",
+      "41052",
+      "80967",
+      "65449",
+      "66346",
+      "61908",
+      "65407",
+      "98078"
+    ],
+    "retrieved_preview": [
+      "İNTERNETHABER.COM- Uludere'de ölen 34 kişi için anma etkinliğinde konuşan BDP Genel Başkanı Selahattin Demirtaş Erdoğan'ı kızdıracak sözler sarfetti. KIŞANAK HÜNGÜR HÜNGÜR AĞLADI Uludere'nin birinci yıldönümü anma etkinliğine katılan BDP Eşbaşkanı Gültan Kışanak Kürtçe ağıtlar yakıldığı sırada gözya",
+      "Şırnak'ın Uludere İlçesi'nin Irak sınırında 28 Aralık 2011 gecesi düzenlenen hava operasyonunda ölen 34 kişi, olayın birinci yılında Uludere'nin Gülyazı Köyü'nde düzenlenen törenle anıldı. Anmaya katılan BDP Genel Başkanı Selahattin Demirtaş, ölümlerden Başbakan Recep Tayyip Erdoğan'ı sorumlu tutara",
+      "\"Bir grup kaçakçının sınırı geçip kendi köylerine doğru hareket halindeyken askerlerce durdurulup yönlerinin değiştirildiği, arkasından da savaş uçakları tarafından bombalandığı bilgileri var.\" Bu iddia BDP Genel Başkanı Selahattin Demirtaş'a ait. Sözlerinin hedefindeki olay ise 35 köylünün ölümüne "
+    ]
+  }
+]

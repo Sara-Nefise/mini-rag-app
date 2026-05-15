@@ -140,6 +140,45 @@ Reports (CSV + Markdown summary):
 python -m experiments.report --run-dir experiments/results/<run_id>
 ```
 
+## Live retrieval profiles and ablations
+
+The live API (`/api/v1/nlp/index/search/{project_id}`) now supports `retrieval_profile`:
+
+- `baseline`: dense top-k only
+- `hybrid`: dense + lexical fusion over over-fetched candidates
+- `hybrid_calibrated`: hybrid + score calibration
+- `coverage`: hybrid_calibrated + coverage-aware greedy rerank
+- `full`: coverage + adaptive over-fetch for multi-intent questions
+
+Run a single profile:
+
+```bash
+cd src
+export PYTHONPATH=.
+python -m scripts.eval_turkuaz_live_search \
+  --project-id 1 \
+  --mode retrieval \
+  --source local \
+  --data-dir data/turkuaz-rag \
+  --limit 50 \
+  --ks 1,3,5,10,20 \
+  --retrieval-profile full \
+  --score-calibration
+```
+
+Run all paper ablations in one command:
+
+```bash
+python -m scripts.run_retrieval_ablations \
+  --project-id 1 \
+  --source local \
+  --data-dir data/turkuaz-rag \
+  --limit 50 \
+  --profiles baseline,hybrid,hybrid_calibrated,coverage,full
+```
+
+This writes one combined `ablation_summary.json` under `experiments/live_eval_results/`.
+
 ## Corpus note
 
 Indexing the entire Turkish MLSUM corpus (~250k articles) matches the paper’s setting but is heavy. The default benchmark builds the retrieval pool from **unique gold news texts** appearing in Turkuaz-RAG (fair relative comparison of retrieval strategies on the same closed pool). Optional `--include-mlsum` can extend the pool when configured.

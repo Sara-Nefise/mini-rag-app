@@ -1,0 +1,177 @@
+[
+  {
+    "sample_id": 0,
+    "question": "Kuzey Kore'nin nükleer silah geliştirme çabalarına karşı uluslararası tepki gösterilmesi gerektiği konusunda anlaşan iki ülke, aynı zamanda İran'ın petrol sektörüne yönelik yaptırımların genişletilmesi konusunda da hangi ülkenin desteğini aramaktadır?",
+    "gold_ids": [
+      "172301",
+      "58187"
+    ],
+    "retrieved_mlsum_ids": [
+      "60060",
+      "52900",
+      "171263",
+      "167902",
+      "62310",
+      "11764",
+      "62295",
+      "16261",
+      "56739",
+      "6203",
+      "57888",
+      "175916",
+      "57835",
+      "58187",
+      "14179",
+      "68699",
+      "86773",
+      "57182",
+      "73959",
+      "83541"
+    ],
+    "retrieved_preview": [
+      "İngiltere basını, Batılı ülkelerin İran'a yönelik yaptırımları ardından Tahran'ın izlediği tutuma ilişkin haber ve yorumlara geniş yer ayırıyor. Tahran yönetimi, Avrupa Birliği'nin İran'a yönelik yaptırımlar listesine petrolü de eklemesine misilleme olarak İngiltere ve Fransa'ya ham petrol ihracatın",
+      "ABD, İngiltere ve Kanada nükleer silah elde etmeye çalışmakla suçladıkları İran'a yeni yaptırımlar açıkladı. Washington, İran'ı \"kara para aklama konusunda birinci derece şüpheli\" ilan etti. Amerikan bankaları zaten İranlı bankalarla iş yapamadığı için, bu uyarı daha çok diğer ülkelere yönelik görül",
+      "Nükleer programı durdurmasıyla uluslararası yaptırımların kaldırıldığı İran, piyasaya dönüyor. En büyük endişe ise fiyatların düşmesi. Geçtiğimiz haftanın son işlem gününde yüzde 6’dan fazla düşerek 30 doların altına gerileyen brent petrol, şimdi de İran baskısı altında. YAPTIRIMLAR KALKTI Dünyanın "
+    ]
+  },
+  {
+    "sample_id": 1,
+    "question": "Saddam Hüseyin'in 11 Eylül saldırılarını Amerika ve Irak ilişkileri açısından yeni bir sayfa olarak gördüğü dönemde, Türkiye'nin krizin arkasında özellikle hangi ülkenin parmağı olduğuna dair iddialar, Ankara-Washington ilişkilerini germe potansiyeline sahipti?",
+    "gold_ids": [
+      "192872",
+      "112765"
+    ],
+    "retrieved_mlsum_ids": [
+      "62462",
+      "49933",
+      "192872",
+      "51204",
+      "126133",
+      "54129",
+      "51189",
+      "37441",
+      "159093",
+      "134207",
+      "3820",
+      "153317",
+      "11848",
+      "125955",
+      "132946",
+      "25346",
+      "156761",
+      "160782",
+      "139811",
+      "160787"
+    ],
+    "retrieved_preview": [
+      "Gazeteci Dilek Yaraş, Haber Ajanda dergisi için kaleme aldığı yazıda, Suriye'de yaşanan gelişmelere ilişkin yaratılmaya çalışılan algıyı sorguluyor. Biz yazısından özetleri aktarıyoruz; Suriye müdahale, yani savaş lobisi, tek yanlı haberleriyle kamuoyu algısını çarpıtmak için var gücüyle çalışıyor. ",
+      "Condoleezza Rice, Abdullah Gül’ün Dışişleri Bakanı olduğu dönemde çok uyumlu çalıştıklarını, Başbakan Erdoğan için \"okuması biraz daha zor bir insandır.\" ifadelerini kullandı. Başkan George Bush’a en yakın isimlerden biri olan Rice’ın önümüzdeki hafta piyasaya çıkacak olan kitabı “En yüksek onur” is",
+      "Nixon Saddam'ın ayrıca \"Irak hükümetinin El Kaide bağlantıları var\" iddiasını reddettiğini ve 11 Eylül saldırılarına hiçbir şekilde destek vermediğini kitabında belirtti. Nixon'a göre Saddam 11 Eylül saldırılarını Amerika ve Irak ilişkileri açısından yeni bir sayfa olarak gördü. ABD yönetiminin 2001"
+    ]
+  },
+  {
+    "sample_id": 2,
+    "question": "29 Ekim Cumhuriyet Bayramı kutlamaları için yapılan tören provaları sırasında, Vatan Caddesi ve Bağdat Caddesi'nde trafiğe kapatılan yollar için sürücülere önerilen alternatif güzergahlar arasında hangi yol, Kadıköy'deki trafiğe kapalı yolların alternatif güzergahları arasında da yer almaktadır?",
+    "gold_ids": [
+      "50800",
+      "106358"
+    ],
+    "retrieved_mlsum_ids": [
+      "134844",
+      "134392",
+      "164173",
+      "134776",
+      "50800",
+      "130834",
+      "188431",
+      "76285",
+      "106244",
+      "164088",
+      "164700",
+      "188506",
+      "106358",
+      "23590",
+      "105761",
+      "105670",
+      "23125",
+      "23459",
+      "78084",
+      "105686"
+    ],
+    "retrieved_preview": [
+      "29 Ekim Cumhuriyet Bayramı yaklaşıyor. 29 Ekim Cumhuriyet Bayramı, her yıl olduğu gibi bu yıl; 91. yıl dönümünde de coşkuyla kutlanacak. Peki bu kutlamalar kapsamında, İstanbul'un hangi caddeleri üzerinde geçişler ve trafik yasak olacak? İşte cevabı... YOLLAR HANGİ SAATLERDE KAPATILACAK? Trafik Dene",
+      "İstanbul'da bugün 29 Ekim Cumhuriyet Bayramı törenleri nedeniyle başta İstanbul Vatan Caddesi olmak üzere bazı yollar trafiğe kapalı olacak. İstanbul Valiliği'nin açıklamasıyla trafiğe kapatılan yollara karşı alternatif yollar hangileri? TRAFİĞE KAPATILAN YOLLAR İstanbul Valiliği yaptığı yazılı açık",
+      "İSTANBUL 'da 29 Ekim Cumhuriyet Bayramı kutlamaları nedeniyle trafiğe kapatılacak yollar ve alternatif güzergahlar belirlendi. İstanbul Valiliği, Vatan Caddesi’nde yapılacak kutlamalarda 29 Ekim 2015 günü 05.00-16.00 saatleri arasında trafiğe kapatılacak yollar ve alternatif güzergahları açıkladı. İ"
+    ]
+  },
+  {
+    "sample_id": 3,
+    "question": "Beşiktaş taraftar grubu Çarşı'nın Kızılay ile birlikte başlattığı kampanya ve Koç Topluluğu Şirketleri'nin jeneratör, gıda ve ısıtıcı gönderdiği yardım faaliyetleri hangi deprem felaketinin mağdurlarına yöneliktir?",
+    "gold_ids": [
+      "53571",
+      "50563"
+    ],
+    "retrieved_mlsum_ids": [
+      "53571",
+      "50563",
+      "50300",
+      "50228",
+      "50652",
+      "50340",
+      "104265",
+      "50658",
+      "664",
+      "50435",
+      "50358",
+      "53507",
+      "50631",
+      "20793",
+      "50254",
+      "140890",
+      "9277",
+      "22299",
+      "50252",
+      "53462"
+    ],
+    "retrieved_preview": [
+      "Beşiktaş'ın en etkili taraftar grubu Çarşı, Van'da yaşanan deprem felaketinin yaralarını sarabilmek amacıyla kampanya başlatıyor. Siyah-beyazlı taraftarlar, internet siteleri vasıtasıyla duyurdukları kampanyanın, Galatasaray ile 20 Kasım Pazar günü oynanacak derbi maçla birlikte başlayacağını açıkla",
+      "Koç Topluluğu Şirketleri, Koç Holding çatısı altında bir koordinasyon kurulu oluşturarak deprem bölgesine yardım göndermeye başladı. Koç Holding AŞ'den yapılan yazılı açıklamada, Van'da meydana gelen depremde onlarca vatandaşın yaşamını yitirdiği, yüzlercesinin yaralandığı ve pek çok evin hasar görm",
+      "Grubun başlattığı kampanya ile 3 Kasım günü \"sahaya atılacak\" olan atkı ve bereler toplanarak Van'a gönderilecek. Çarşı'nın sayfasından yapılan açıklama şöyle: ''Deprem felaketi sonrası soğuktan üşüyen yüreklere, merhametle ısıttığımız atkılarımızı yollayacağız. Önce kartallarımızı destekliyoruz maç"
+    ]
+  },
+  {
+    "sample_id": 4,
+    "question": "Uludere'de yaşamını yitirenlerin anma etkinliğinde, Kürdistan meselesi üzerinden Erdoğan'a yönelik eleştirilerde bulunan ve bu olayın Kürdistan'ın önünü kesmek amacıyla yapıldığını belirten BDP Genel Başkanı kimdir?",
+    "gold_ids": [
+      "54000",
+      "80841"
+    ],
+    "retrieved_mlsum_ids": [
+      "80841",
+      "80788",
+      "53998",
+      "54048",
+      "80967",
+      "57076",
+      "65407",
+      "54123",
+      "80787",
+      "65405",
+      "53938",
+      "114219",
+      "66346",
+      "77895",
+      "68776",
+      "65538",
+      "65449",
+      "61908",
+      "98069",
+      "98078"
+    ],
+    "retrieved_preview": [
+      "İNTERNETHABER.COM- Uludere'de ölen 34 kişi için anma etkinliğinde konuşan BDP Genel Başkanı Selahattin Demirtaş Erdoğan'ı kızdıracak sözler sarfetti. KIŞANAK HÜNGÜR HÜNGÜR AĞLADI Uludere'nin birinci yıldönümü anma etkinliğine katılan BDP Eşbaşkanı Gültan Kışanak Kürtçe ağıtlar yakıldığı sırada gözya",
+      "Şırnak'ın Uludere İlçesi'nin Irak sınırında 28 Aralık 2011 gecesi düzenlenen hava operasyonunda ölen 34 kişi, olayın birinci yılında Uludere'nin Gülyazı Köyü'nde düzenlenen törenle anıldı. Anmaya katılan BDP Genel Başkanı Selahattin Demirtaş, ölümlerden Başbakan Recep Tayyip Erdoğan'ı sorumlu tutara",
+      "BDP Grup Başkanvekili Hasip Kaplan, Şırnak Uludere'de yaşanan olayla ilgili İHA'ların grubun görüntülerini tespit ettikten hava harekatının gerçekleştiği ana kadar 3 saatin geçtiğini belirterek, bu üç saat içinde neler yaşandığını sordu. BDP'li Kaplan Şırnak Uludere'de 35 kişinin hayatını kaybettiği"
+    ]
+  }
+]

@@ -1,0 +1,177 @@
+[
+  {
+    "sample_id": 0,
+    "question": "Kuzey Kore'nin nükleer silah geliştirme çabalarına karşı uluslararası tepki gösterilmesi gerektiği konusunda anlaşan iki ülke, aynı zamanda İran'ın petrol sektörüne yönelik yaptırımların genişletilmesi konusunda da hangi ülkenin desteğini aramaktadır?",
+    "gold_ids": [
+      "172301",
+      "58187"
+    ],
+    "retrieved_mlsum_ids": [
+      "172301",
+      "88785",
+      "163180",
+      "86933",
+      "199246",
+      "86773",
+      "51833",
+      "165483",
+      "83541",
+      "187463",
+      "105719",
+      "103279",
+      "66648",
+      "85868",
+      "56463",
+      "88913",
+      "199239",
+      "85857",
+      "53541",
+      "68699"
+    ],
+    "retrieved_preview": [
+      "ABD Ulusal Güvenlik Danışmanı Rice ile Çin Dışişleri Bakanı Wang Yi, nükleer silahlara sahip bir Kuzey Kore'yi kabul etmeme konusunda anlaştı. Beyaz Saray Ulusal Güvenlik Konseyi Sözcüsü Ned Price, yaptığı açıklamada, ABD Ulusal Güvenlik Danışmanı Susan Rice ile Çin Dışişleri Bakanı Wang Yi'nin Beya",
+      "ABD bu uçuşları Güney Kore ile her yıl düzenli yaptığı askeri tatbikatlar sırasında gerçekleştirecek. Amerikalı yetkililer, Kore yarımadasında tırmanan gerginliğe karşılık bu uçuşların \"genişletilmiş caydırıcı kapasite\" sergilemek amacıyla yapıldığını ifade ediyor. ABD ile Güney Kore arasındaki aske",
+      "Kuzey Kore nükleer yakıt üretiminin teknolojik modernizasyonla yeniden başlatıldığını açıkladı. Devlet haber ajansı KCNA, ülkenin nükleer silahlarının 'hem nitelik hem de nicelik' olarak güçlendirileceğini belirtti. Açıklamada \"Kuzey Kore ABD'nin tehditlerine nükleer silahlarla karşılık vermeye her "
+    ]
+  },
+  {
+    "sample_id": 1,
+    "question": "Saddam Hüseyin'in 11 Eylül saldırılarını Amerika ve Irak ilişkileri açısından yeni bir sayfa olarak gördüğü dönemde, Türkiye'nin krizin arkasında özellikle hangi ülkenin parmağı olduğuna dair iddialar, Ankara-Washington ilişkilerini germe potansiyeline sahipti?",
+    "gold_ids": [
+      "192872",
+      "112765"
+    ],
+    "retrieved_mlsum_ids": [
+      "192872",
+      "21032",
+      "21278",
+      "125955",
+      "126133",
+      "54129",
+      "110206",
+      "161010",
+      "25346",
+      "132946",
+      "4627",
+      "71299",
+      "139811",
+      "160793",
+      "25822",
+      "188751",
+      "156345",
+      "25851",
+      "51189",
+      "156761"
+    ],
+    "retrieved_preview": [
+      "Nixon Saddam'ın ayrıca \"Irak hükümetinin El Kaide bağlantıları var\" iddiasını reddettiğini ve 11 Eylül saldırılarına hiçbir şekilde destek vermediğini kitabında belirtti. Nixon'a göre Saddam 11 Eylül saldırılarını Amerika ve Irak ilişkileri açısından yeni bir sayfa olarak gördü. ABD yönetiminin 2001",
+      "ABD'de gizliliği kaldırılan bazı belgeler, George W. Ulusal Güvenlik Arşivlerinin açıklanan resmi belgelerine göre, ABD'ye yönelik 11 Eylül 2001 saldırılarından birkaç saat sonra Irak'a saldırıyı gündeme getiren dönemin Savunma Bakanı Donald Rumsfeld, Bakanlığının bir avukatından Irak rejimi ile El ",
+      "BM Genel Kurulu'nda konuşan İran Cumhurbaşkanı Mahmud Ahmedinejad'ın 11 Eylül 2001'deki saldırıların ''Amerikan komplosu'' olduğunu söylemesi üzerine ABD'li ve batılı heyetler salonu terk etti. Ahmedinejad, BM Genel Kurulu'nda, dünyada birçok kişinin ''İsrail'in kurtuluşunu sağlamak için 11 Eylül sa"
+    ]
+  },
+  {
+    "sample_id": 2,
+    "question": "29 Ekim Cumhuriyet Bayramı kutlamaları için yapılan tören provaları sırasında, Vatan Caddesi ve Bağdat Caddesi'nde trafiğe kapatılan yollar için sürücülere önerilen alternatif güzergahlar arasında hangi yol, Kadıköy'deki trafiğe kapalı yolların alternatif güzergahları arasında da yer almaktadır?",
+    "gold_ids": [
+      "50800",
+      "106358"
+    ],
+    "retrieved_mlsum_ids": [
+      "134844",
+      "23459",
+      "24282",
+      "105670",
+      "164700",
+      "187682",
+      "164598",
+      "23590",
+      "164413",
+      "134776",
+      "164088",
+      "50063",
+      "187843",
+      "188506",
+      "106244",
+      "23125",
+      "105686",
+      "164173",
+      "134313",
+      "23862"
+    ],
+    "retrieved_preview": [
+      "29 Ekim Cumhuriyet Bayramı yaklaşıyor. 29 Ekim Cumhuriyet Bayramı, her yıl olduğu gibi bu yıl; 91. yıl dönümünde de coşkuyla kutlanacak. Peki bu kutlamalar kapsamında, İstanbul'un hangi caddeleri üzerinde geçişler ve trafik yasak olacak? İşte cevabı... YOLLAR HANGİ SAATLERDE KAPATILACAK? Trafik Dene",
+      "29 Ekim Cumhuriyet Bayramı kutlama törenlerinin provaları ve geçit töreni nedeniyle 25, 27 ve 29 Ekimde Başkentte bazı yollar trafiğe kapatılacak. Ankara Emniyet Müdürlüğü Basın ve Halkla İlişkiler Şube Müdürlüğünce yapılan yazılı açıklamaya göre, Atatürk Kültür Merkezi (AKM) alanında gerçekleştiril",
+      "29 Ekim Cumhuriyet Bayramı kutlama törenlerinin provaları ve geçit töreni nedeniyle 25, 27 ve 29 Ekim'de Başkent'te bazı yollar trafiğe kapatılacak. Ankara Emniyet Müdürlüğü Basın ve Halkla İlişkiler Şube Müdürlüğünce yapılan yazılı açıklamaya göre, Atatürk Kültür Merkezi alanında gerçekleştirilecek"
+    ]
+  },
+  {
+    "sample_id": 3,
+    "question": "Beşiktaş taraftar grubu Çarşı'nın Kızılay ile birlikte başlattığı kampanya ve Koç Topluluğu Şirketleri'nin jeneratör, gıda ve ısıtıcı gönderdiği yardım faaliyetleri hangi deprem felaketinin mağdurlarına yöneliktir?",
+    "gold_ids": [
+      "53571",
+      "50563"
+    ],
+    "retrieved_mlsum_ids": [
+      "53571",
+      "9277",
+      "9286",
+      "28977",
+      "3352",
+      "140890",
+      "53462",
+      "50300",
+      "104116",
+      "50228",
+      "50252",
+      "51066",
+      "104113",
+      "104265",
+      "51818",
+      "50055",
+      "104410",
+      "22299",
+      "103907",
+      "50024"
+    ],
+    "retrieved_preview": [
+      "Beşiktaş'ın en etkili taraftar grubu Çarşı, Van'da yaşanan deprem felaketinin yaralarını sarabilmek amacıyla kampanya başlatıyor. Siyah-beyazlı taraftarlar, internet siteleri vasıtasıyla duyurdukları kampanyanın, Galatasaray ile 20 Kasım Pazar günü oynanacak derbi maçla birlikte başlayacağını açıkla",
+      "Fenerbahçe-Beşiktaş maçında haksızlığa uğradığını iddia eden Beşiktaşlı taraflarlar sokağa döküldü. Çarşı grubunun organize ettiği protesto gösterilerinde hedefte Futbol Federasyonu ve MHK vardı. Beşiktaşlı taraftarların Türkiye Futbol Federasyonu'nu prostesto etmek için Federasyon binasına yürüme h",
+      "Emniyet güçleri Beşiktaş çarşı içinde toplanan Siyah-Beyzalı taraftarlar arasından en fazla 30’unun Federasyon binasına yürümesine izin verdi.. Ancak ilerleyen dakikalarda olaylar istenmeyen bir hal aldı. Çarşı Grubu lideri Alen Markaryan’ın yaptığı basın açıklamasından sonra polisle taraftarlar ara"
+    ]
+  },
+  {
+    "sample_id": 4,
+    "question": "Uludere'de yaşamını yitirenlerin anma etkinliğinde, Kürdistan meselesi üzerinden Erdoğan'a yönelik eleştirilerde bulunan ve bu olayın Kürdistan'ın önünü kesmek amacıyla yapıldığını belirten BDP Genel Başkanı kimdir?",
+    "gold_ids": [
+      "54000",
+      "80841"
+    ],
+    "retrieved_mlsum_ids": [
+      "81028",
+      "80841",
+      "67398",
+      "54029",
+      "54000",
+      "65647",
+      "54204",
+      "54048",
+      "65449",
+      "80967",
+      "57108",
+      "80787",
+      "54081",
+      "57076",
+      "80788",
+      "54119",
+      "53998",
+      "65407",
+      "66846",
+      "60542"
+    ],
+    "retrieved_preview": [
+      "BDP Mersin Milletvekili Ertuğrul Kürkçü, Uludere olayının ardından Türkler ile Kürtlerin aynı çatı altında yaşamalarının mümkün olmadığını ileri sürdü. Anma törenlerinde konuşan Kışanak ise Uludere'nin hesabı verilmeden Türkiye Cumhuriyeti'nin Kürtler'in devleti olamayacağını söyledi. Barış ve Demok",
+      "İNTERNETHABER.COM- Uludere'de ölen 34 kişi için anma etkinliğinde konuşan BDP Genel Başkanı Selahattin Demirtaş Erdoğan'ı kızdıracak sözler sarfetti. KIŞANAK HÜNGÜR HÜNGÜR AĞLADI Uludere'nin birinci yıldönümü anma etkinliğine katılan BDP Eşbaşkanı Gültan Kışanak Kürtçe ağıtlar yakıldığı sırada gözya",
+      "Uludere’de önceki akşam ‘ Uludere ‘yi unutmadık, unutmayacağız, unutturmayacağız’ sloganıyla bazı BDPli milletvekillerinin ve sivil toplum örgütü temsilcilerinin katılımıyla ‘Adalet Nöbeti’ başlatıldı. BİBER GAZI VE TAZYİKLİ SUYLA MÜDAHALE Öldürülen 34 gencin ailesi ile BDP milletvekillerinden Aysel"
+    ]
+  }
+]

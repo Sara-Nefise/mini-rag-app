@@ -1,0 +1,7 @@
+[
+  {
+    "sample_id": 34,
+    "question": "FİFA Başkanı Sepp Blatter'in kale çizgisi teknolojisinin gerekliliğini vurgulamasına neden olan ve İngiltere ile yapılan maçta tartışmalı bir gol pozisyonunun yaşandığı ülke, 2018 yılında Türkiye ile oynadığı hazırlık maçında golsüz berabere kalan ülke hangisidir?",
+    "error": "Server error '500 Internal Server Error' for url 'http://127.0.0.1:8001/api/v1/nlp/index/search/100'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+  }
+]

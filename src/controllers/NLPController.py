@@ -1,8 +1,13 @@
 from .BaseController import BaseController
 from models.db_schemes import Project, DataChunk
 from stores.llm.LLMEnums import DocumentTypeEnum
-from typing import List
+from typing import List, Optional
 import json
+from controllers.retrieval_profiles import (
+    adaptive_fetch_limit,
+    get_retrieval_profile,
+    rerank_documents,
+)
 
 class NLPController(BaseController):
 
@@ -63,7 +68,14 @@ class NLPController(BaseController):
 
         return True
 
-    async def search_vector_db_collection(self, project: Project, text: str, limit: int = 10):
+    async def search_vector_db_collection(
+        self,
+        project: Project,
+        text: str,
+        limit: int = 10,
+        retrieval_profile: str = "baseline",
+        fusion_ce_weight: Optional[float] = None,
+    ):
 
         # step1: get collection name
         collection_name = self.create_collection_name(project_id=project.project_id)
@@ -80,19 +92,36 @@ class NLPController(BaseController):
         if isinstance(vectors,list) and len(vectors) > 0:
             query_vector= vectors[0]
 
+        profile = get_retrieval_profile(retrieval_profile)
+        fetch_limit = adaptive_fetch_limit(query=text, requested_limit=limit, profile=profile)
+
         # step3: do semantic search
         results = await self.vectordb_client.search_by_vector(
             collection_name=collection_name,
             vector=query_vector,
-            limit=limit
+            limit=fetch_limit,
         )
 
         if not results:
             return False
 
-        return results
+        reranked = rerank_documents(
+            query=text,
+            docs=results,
+            limit=limit,
+            profile=profile,
+            fusion_ce_weight=fusion_ce_weight,
+        )
+        return reranked
     
-    async def answer_rag_question(self, project: Project, query: str, limit: int = 10):
+    async def answer_rag_question(
+        self,
+        project: Project,
+        query: str,
+        limit: int = 10,
+        retrieval_profile: str = "baseline",
+        fusion_ce_weight: Optional[float] = None,
+    ):
         
         answer, full_prompt, chat_history = None, None, None
 
@@ -101,6 +130,8 @@ class NLPController(BaseController):
             project=project,
             text=query,
             limit=limit,
+            retrieval_profile=retrieval_profile,
+            fusion_ce_weight=fusion_ce_weight,
         )
 
         if not retrieved_documents or len(retrieved_documents) == 0:

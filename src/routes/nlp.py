@@ -145,7 +145,11 @@ async def search_index(request: Request, project_id: int, search_request: Search
     )
 
     results = await nlp_controller.search_vector_db_collection(
-        project=project, text=search_request.text, limit=search_request.limit
+        project=project,
+        text=search_request.text,
+        limit=search_request.limit,
+        retrieval_profile=search_request.retrieval_profile or "baseline",
+        fusion_ce_weight=search_request.reranker_fusion_ce_weight,
     )
 
     if not results:
@@ -185,6 +189,8 @@ async def answer_rag(request: Request, project_id: int ,search_request: SearchRe
         project=project,
         query=search_request.text,
         limit=search_request.limit,
+        retrieval_profile=search_request.retrieval_profile or "baseline",
+        fusion_ce_weight=search_request.reranker_fusion_ce_weight,
     )
     #
  

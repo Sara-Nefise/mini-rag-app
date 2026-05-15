@@ -56,6 +56,18 @@ class Settings(BaseSettings):
     VECTOR_DB_DISTANCE_METHOD: Optional[str] = None
     VECTOR_DB_PGVEC_INDEX_THRESHOLD: int = 100
 
+    #: Cross-encoder reranker (sentence-transformers). Enable + use retrieval_profile *\_xe.
+    RERANKER_ENABLED: bool = False
+    RERANKER_MODEL_ID: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    #: Score this many candidates from the dense+RRF pool (then return top ``limit``).
+    RERANKER_POOL_SIZE: int = 48
+    RERANKER_MAX_INPUT_CHARS: int = 1800
+    RERANKER_BATCH_SIZE: int = 16
+    #: Device for cross-encoder only. Default ``cpu`` avoids MPS OOM alongside embedding models on Apple Silicon.
+    RERANKER_DEVICE: str = "cpu"
+    #: 0 = trust dense+RRF only; 1 = trust cross-encoder only. Lower is safer for non-English / domain mismatch.
+    RERANKER_FUSION_CE_WEIGHT: float = 0.35
+
     PRIMARY_LANG: str = "en"
     DEFAULT_LANG: str = "en"
     FIREBASE_CREDENTIALS_PATH: Optional[str] = None

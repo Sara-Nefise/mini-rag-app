@@ -30,9 +30,32 @@ def _split_contexts_field(raw: Any) -> Tuple[str, str]:
 
 
 def _question_type(row: Dict[str, Any]) -> str:
-    for key in ("question_type", "type", "category", "Question Type"):
+    """Resolve question category from Turkuaz CSV / DB export columns."""
+    # Ordered: canonical HF column first, then common aliases from exports / DB dumps.
+    for key in (
+        "question_type",
+        "Question_Type",
+        "QuestionType",
+        "questionType",
+        "type",
+        "category",
+        "Question Type",
+        "question category",
+    ):
         if key in row and row[key] is not None:
-            return str(row[key]).strip()
+            s = str(row[key]).strip()
+            if s:
+                return s
+
+    # Case-insensitive match on keys (handles QUESTION_TYPE, Question_Type, etc.)
+    lower_to_orig = {(k or "").strip().lower().replace(" ", "_"): k for k in row.keys()}
+    for wanted in ("question_type", "questiontype", "type", "category"):
+        orig = lower_to_orig.get(wanted)
+        if orig is not None and row.get(orig) is not None:
+            s = str(row[orig]).strip()
+            if s:
+                return s
+
     return "unknown"
 
 

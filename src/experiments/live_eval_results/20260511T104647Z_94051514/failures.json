@@ -1,0 +1,177 @@
+[
+  {
+    "sample_id": 0,
+    "question": "Kuzey Kore'nin nükleer silah geliştirme çabalarına karşı uluslararası tepki gösterilmesi gerektiği konusunda anlaşan iki ülke, aynı zamanda İran'ın petrol sektörüne yönelik yaptırımların genişletilmesi konusunda da hangi ülkenin desteğini aramaktadır?",
+    "gold_ids": [
+      "172301",
+      "58187"
+    ],
+    "retrieved_mlsum_ids": [
+      "60060",
+      "59876",
+      "108862",
+      "16261",
+      "11764",
+      "158086",
+      "171263",
+      "150340",
+      "31666",
+      "112915",
+      "167902",
+      "62310",
+      "12058",
+      "60013",
+      "58187",
+      "73959",
+      "61387",
+      "52900",
+      "108629",
+      "86933"
+    ],
+    "retrieved_preview": [
+      "İngiltere basını, Batılı ülkelerin İran'a yönelik yaptırımları ardından Tahran'ın izlediği tutuma ilişkin haber ve yorumlara geniş yer ayırıyor. Tahran yönetimi, Avrupa Birliği'nin İran'a yönelik yaptırımlar listesine petrolü de eklemesine misilleme olarak İngiltere ve Fransa'ya ham petrol ihracatın",
+      "İran'ın nükleer faaliyetlerine ilişkin gelişmeler, İngiltere basınında yakından takip ediliyor. Birleşmiş Milletler'e bağlı Uluslararası Atom Enerjisi Kurumu'ndan denetçiler, İran'a iki günlük ziyaretlerine başlarken kimi bölge uzmanları bu ziyaretin Körfez'de beliren krizi ya yatıştıracağı ya da al",
+      "İran’ın nükleer programına Batılı güçler tarafından yıllardır uygulanan yaptırımların sonunda, haftasonu Cenevre’de geçici de olsa bir anlaşmaya varıldı. Anlaşma, ilk etapta 6 aylık bir süre içinde İran’ın uranyum zenginleştirmesine ve nükleer santrallerdeki çalışmalarına sınırlamalar getirirken, P5"
+    ]
+  },
+  {
+    "sample_id": 1,
+    "question": "Saddam Hüseyin'in 11 Eylül saldırılarını Amerika ve Irak ilişkileri açısından yeni bir sayfa olarak gördüğü dönemde, Türkiye'nin krizin arkasında özellikle hangi ülkenin parmağı olduğuna dair iddialar, Ankara-Washington ilişkilerini germe potansiyeline sahipti?",
+    "gold_ids": [
+      "192872",
+      "112765"
+    ],
+    "retrieved_mlsum_ids": [
+      "62462",
+      "37441",
+      "181642",
+      "34767",
+      "49933",
+      "35246",
+      "160793",
+      "183154",
+      "78782",
+      "51204",
+      "32048",
+      "54129",
+      "133344",
+      "47034",
+      "35467",
+      "139811",
+      "126133",
+      "84999",
+      "159093",
+      "24530"
+    ],
+    "retrieved_preview": [
+      "Gazeteci Dilek Yaraş, Haber Ajanda dergisi için kaleme aldığı yazıda, Suriye'de yaşanan gelişmelere ilişkin yaratılmaya çalışılan algıyı sorguluyor. Biz yazısından özetleri aktarıyoruz; Suriye müdahale, yani savaş lobisi, tek yanlı haberleriyle kamuoyu algısını çarpıtmak için var gücüyle çalışıyor. ",
+      "ABD'li diplomatlara göre Cemil Çiçek ve 30 adamı, ordu ile ortak hareket ederek Erdoğan'ı iyice yalnızlaştırmaya çalışıyor. 1981'de Yale Üniversitesi'nde Amerikan Siyasi Tarihi üzerine doktorasını tamamladığında henüz otuz yaşında olan Eric Edelman, 1992'de nispeten geç sayılabilecek bir yaşta adım ",
+      "FETÖ'cü medya tarafından yayılan yalan haberler, içeride ve dışarıda Türkiye’ye muhalif kanallar tarafından ‘sözde muteber yerel bir kaynağa’ dayandırılarak alıntılanıyor ve dolaşıma sokuluyor. New York Times’a 25 Temmuz tarihinde bir yazı yazarak, ABD yönetimini Türkiye’nin talepleri doğrultusunda "
+    ]
+  },
+  {
+    "sample_id": 2,
+    "question": "29 Ekim Cumhuriyet Bayramı kutlamaları için yapılan tören provaları sırasında, Vatan Caddesi ve Bağdat Caddesi'nde trafiğe kapatılan yollar için sürücülere önerilen alternatif güzergahlar arasında hangi yol, Kadıköy'deki trafiğe kapalı yolların alternatif güzergahları arasında da yer almaktadır?",
+    "gold_ids": [
+      "50800",
+      "106358"
+    ],
+    "retrieved_mlsum_ids": [
+      "148697",
+      "134844",
+      "167724",
+      "187843",
+      "49946",
+      "23590",
+      "76896",
+      "106244",
+      "23635",
+      "199106",
+      "76285",
+      "188506",
+      "22372",
+      "106358",
+      "134392",
+      "164598",
+      "164173",
+      "134776",
+      "105670",
+      "164700"
+    ],
+    "retrieved_preview": [
+      "1 Mayıs için geri sayım başladı. Emniyet Müdürlüğü 1 Mayıs tedbirlerini bir bir sıraladı. Peki yarın, 1 Mayıs'ta metrobüs seferleri açık mı, İstanbul Valiliği'nden bu konuda henüz net bir açıklama yok. Geçtiğimiz yıllarda metrobüs seferleri ile ilgili net karar 30 Nisan akşamı verilmişti. YARIN BU Y",
+      "29 Ekim Cumhuriyet Bayramı yaklaşıyor. 29 Ekim Cumhuriyet Bayramı, her yıl olduğu gibi bu yıl; 91. yıl dönümünde de coşkuyla kutlanacak. Peki bu kutlamalar kapsamında, İstanbul'un hangi caddeleri üzerinde geçişler ve trafik yasak olacak? İşte cevabı... YOLLAR HANGİ SAATLERDE KAPATILACAK? Trafik Dene",
+      "İstanbul'da bugün gerçekleştirilecek 37. Vodafone Kıtalararası Avrasya Maratonu nedeniyle, sabah saat 06.00'dan itibaren bazı yollar kademeli olarak trafiğe kapatılmaya başlandı. Bu kapsamda, Boğaziçi Köprüsü bağlantı yolları trafik polisleri tarafından kapatılarak, sürücüler alternatif güzergahlara"
+    ]
+  },
+  {
+    "sample_id": 3,
+    "question": "Beşiktaş taraftar grubu Çarşı'nın Kızılay ile birlikte başlattığı kampanya ve Koç Topluluğu Şirketleri'nin jeneratör, gıda ve ısıtıcı gönderdiği yardım faaliyetleri hangi deprem felaketinin mağdurlarına yöneliktir?",
+    "gold_ids": [
+      "53571",
+      "50563"
+    ],
+    "retrieved_mlsum_ids": [
+      "50398",
+      "53507",
+      "104265",
+      "128022",
+      "50340",
+      "104226",
+      "50393",
+      "50346",
+      "128281",
+      "70578",
+      "140857",
+      "50380",
+      "104116",
+      "104115",
+      "13727",
+      "53571",
+      "50358",
+      "21389",
+      "54604",
+      "50658"
+    ],
+    "retrieved_preview": [
+      "Van ve ilçelerindeki deprem felaketi birçok kurum ve kuruluşu da harekete geçirdi. Resmi kurumların yanısıra siyasi partiler, yerel yönetimler ve özel şirketler yardım kampanyaları başlattı. Yardım etmek isteyen vatandaşların kafaları ise yardımlarını nasıl depremzedelere ulaştıracağı konusunda karı",
+      "İnternetten yayılan \"Evim evindir\" kampanyasıyla; bin 515 depremzede, evlere misafir alındı. Kimsesiz 103 çocuk ise Kefken'deki Yaz Kampı'na yerleştirildi. Van'daki depremlerin ardından vuran ağır kış şartları kenti yaşanmaz hale getirdi. Devletin yanı sıra, halk evini, sofrasını, gönlünü kardeşleri",
+      "Türkiye Süper Ligi'nin 5. haftasında Beşiktaş ile Galatasaray'ı karşı karşıya getiren derbi, taraftarların sahaya inmesiyle bitiş düdüğüne dakikalar kala tatil edildi. Sandalyelerin havada uçuştuğu, siyah-beyazlılar ve turuncu üniformalı güvenlik görevlilerinin birbirlerini kovaladığı, ve hatta göza"
+    ]
+  },
+  {
+    "sample_id": 4,
+    "question": "Uludere'de yaşamını yitirenlerin anma etkinliğinde, Kürdistan meselesi üzerinden Erdoğan'a yönelik eleştirilerde bulunan ve bu olayın Kürdistan'ın önünü kesmek amacıyla yapıldığını belirten BDP Genel Başkanı kimdir?",
+    "gold_ids": [
+      "54000",
+      "80841"
+    ],
+    "retrieved_mlsum_ids": [
+      "65407",
+      "56190",
+      "68776",
+      "65405",
+      "72637",
+      "57108",
+      "84486",
+      "80788",
+      "77655",
+      "21096",
+      "80967",
+      "85474",
+      "168128",
+      "114219",
+      "54048",
+      "156956",
+      "80841",
+      "53998",
+      "108034",
+      "46121"
+    ],
+    "retrieved_preview": [
+      "Başbakan Erdoğan, eleştirilerinin aslan payını BDP'ye ayırdı. \"Ceset avcıları\" dediği partiyi çok sert sözlerle hedef aldı: \"Türkiye, BDP’li kalleşlerin, PKK’lı kalleşlerin benim subayımı askerimi gelip arkadan şehit ettiği bir ülke değildir.\" Partisinin grup toplantısında konuşan Erdoğan'ın gündemi",
+      "İNTERNETHABER/ Önce BDP Eş Başkanı Selahattin Demirtaş'ın Uludere'deki bombalama operasyonunun emrini bizzet Erdoğan'ın verdiği iddiasını anımsatan Erdoğan, BDP'yi ahlaksızlıkla suçladı: \"Eleştiri, muhalefet siyasetin tabiatında vardır, ancak yalan ve iftira siyasetin bir parçası olamaz. Başbakan'a ",
+      "İNTERNETHABER.COM- Hakkari’de 8 askerin şehit olmasını değerlendiren BDP Genel Başkanı Selahattin Demirtaş, PKK’ya silah bırakma çağrısında bulundu. Partisinin TBMM'deki grup toplantısında konuşan BDP lideri Demirtaş, \"Barışı her zamankinden daha fazla savunmalıyız. PKK her türlü silahlı faaliyetine"
+    ]
+  }
+]

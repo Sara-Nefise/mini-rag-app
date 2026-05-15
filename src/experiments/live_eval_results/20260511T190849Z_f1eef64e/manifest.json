@@ -1,0 +1,69 @@
+{
+  "run_dir": "/Users/saranafisa/Desktop/Tez/Code/mini-rag-app/src/experiments/live_eval_results/20260511T190849Z_f1eef64e",
+  "created_at_utc": "2026-05-11T19:53:58.458861+00:00",
+  "cwd": "/Users/saranafisa/Desktop/Tez/Code/mini-rag-app/src",
+  "python": "3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "env": {
+    "PYTHONPATH": "src"
+  },
+  "params": {
+    "base_url": "http://127.0.0.1:8001",
+    "project_id": 100,
+    "mode": "retrieval",
+    "source": "local",
+    "data_dir": "data/turkuaz-rag",
+    "jsonl_path": "experiments/fixtures/sample_eval.jsonl",
+    "limit": 50,
+    "ks": [
+      1,
+      3,
+      5,
+      10,
+      20
+    ],
+    "min_score_threshold": null,
+    "max_per_question_type": null,
+    "seed": 42,
+    "strict_id_match": false,
+    "allow_duplicates": false,
+    "metrics": [
+      "hit",
+      "mrr",
+      "ndcg",
+      "recall"
+    ],
+    "score_calibration": true,
+    "save_topn_text": 3,
+    "error_policy": "stop",
+    "request_timeout": 240.0,
+    "retries": 0,
+    "judge_model": null,
+    "answer_metrics": [
+      "exact",
+      "f1",
+      "semantic"
+    ],
+    "show_failures": 5,
+    "retrieval_profile": "hybrid_calibrated_xe"
+  },
+  "rag_config": {
+    "generation_backend": "OPENAI",
+    "generation_model_id": "openai/gpt-4o-mini",
+    "embedding_backend": "SENTENCE_TRANSFORMERS",
+    "embedding_model_id": "intfloat/multilingual-e5-large",
+    "embedding_model_size": 1024,
+    "embedding_batch_size": 4,
+    "embedding_input_max_chars": 12000,
+    "embedding_max_input_tokens": 512,
+    "vector_db_backend": "PGVECTOR",
+    "vector_db_distance_method": "cosine",
+    "vector_db_index_threshold": 100,
+    "primary_lang": "en",
+    "default_lang": "en",
+    "reranker_enabled": true,
+    "reranker_model_id": "BAAI/bge-reranker-v2-m3",
+    "reranker_pool_size": 48,
+    "reranker_fusion_ce_weight": 0.35,
+    "reranker_device": "cpu"
+  }
+}
